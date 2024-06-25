@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyser</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Sarah <span>Moulin</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html#home" class="active">Home</a>
+            <a href="index.html#experiences">Expériences</a>
+            <a href="index.html#formation">Formation</a>
+            <a href="index.html#competences">Compétences</a>
+        </nav>
+    </header>
+
+    <section class="competences analyser">
+        <h2 class="sub-heading">Analyser statistiquement les données</h2>
+        <div class="niveau-container">
+            <div class="niveau">
+                <h3>Niveau 1: Mettre en œuvre une analyse descriptive</h3>
+                <p>Notre formation en BUT nous a permis d'apprendre à mettre en oeuvre une analyse descriptive. Lors de projet tel que la SAE Etude statistique et enquête nous avons eu l'opportunité de travailler sur une base de données contenant des informations sur différentes catégories de voitures. L'objectif était de déterminer les caractéristiques des voitures les moins polluantes pour aider un entrepreneur à démarrer une concession de voitures respectueuse de l'environnement.<br><br>
+
+                    Nous avons utilisé des outils tels que RStudio et Excel pour analyser les données et identifier les variables les plus importantes à prendre en compte pour sélctionner les voitures les moins polluantes. Nous avons également créé des graphiques pour visualiser les relations entre les variables et interpréter les résultats.<br><br>
+                    
+                    Grâce à ce projet, nous avons pu développer mes compétences en analyse de données, en utilisant des outils statistiques pour traiter et interpréter des données complexes. Nous avons également appris à présenter les résultats de manière claire et concise pour aider à prendre des décisions éclairées.<br><br>
+                    
+                    En fin de compte, nous avons pu recommander à l'entrepreneur de se concentrer sur les voitures hybrides et électriques pour sa concession, car elles étaient les moins polluantes. Nous avons également souligné l'importance de prendre en compte les variables telles que la consommation de carburant et les émissions de CO2 lors de la sélection des voitures à acquérir.<br><br>
+                <p><a href="SAE_Enquête_grp3.pdf" class="rapport-link">Rapport</a></p>
+            </div>
+            <div class="niveau">
+                <h3>Niveau 2: Mettre en œuvre une analyse exploratoire</h3>
+                <p>L'objectif principal de ce projet est d'analyser les tendances de la consommation de location automobile en modélisant la série temporelle des données de miles parcourus. L'analyse vise également à prévoir les prochains miles effectués pour améliorer la gestion et la rentabilité des véhicules d'une agence de location.<br><br>
+
+                    Les données utilisées dans ce projet couvrent une période de 18 ans, d'avril 1984 à mars 2002, avec un total de 216 observations mensuelles. Ces données sont cruciales pour comprendre les comportements de location des consommateurs et pour optimiser la gestion de la flotte de l'agence.<br><br>
+                    
+                    Nous avons commencé par une analyse graphique pour visualiser les comportements globaux de la série temporelle. Cette analyse a révélé une tendance croissante du nombre de miles parcourus au fil des années, indiquant une augmentation de la consommation de location automobile. La méthode de la bande a confirmé que le modèle additif était le plus adapté pour nos données.<br><br>
+                    
+                    En analysant la fonction d'autocorrélation, nous avons identifié un phénomène oscillatoire saisonnier avec une période de 12 mois. Cette saisonnalité est due à des variations régulières et prévisibles dans les données, notamment un pic de miles parcourus durant l'été.<br><br>
+                    
+                    Nous avons utilisé le lissage par moyenne mobile et la méthode paramétrique pour estimer la tendance. Ensuite, nous avons estimé la composante saisonnière en calculant les coefficients saisonniers pour une période de 12 mois. La série corrigée des variations saisonnières (CVS) a permis d'éliminer la saisonnalité et d'observer les erreurs résiduelles.<br><br>
+                    
+                    Nous avons ajusté la série temporelle avec le modèle additif pour obtenir une série ajustée. Le critère MSE (Mean Squared Error) a été utilisé pour évaluer la qualité de l'ajustement. Un MSE de 5 140 823 a été obtenu, indiquant un bon ajustement du modèle. Nous avons ensuite modélisé les résidus avec le modèle ARMA (Auto Regressive Moving Average) pour affiner les prévisions et réduire les erreurs.<br><br>
+                    
+                    Une fois le modèle bien ajusté, nous avons utilisé le modèle ARMA pour prédire les valeurs à court terme. Les prévisions sur 12 mois pour l'année 2003 ont montré une augmentation continue des miles parcourus. Ces prévisions permettent à l'agence de location de mieux planifier et gérer leur flotte de véhicules, en anticipant les périodes de forte demande et en optimisant les ressources.<br><br>
+                    
+                    Cette analyse a mis en évidence la différence entre la modélisation statistique et l'analyse exploratoire. L'analyse exploratoire a été utilisée pour visualiser et comprendre les tendances et les comportements globaux des données de miles parcourus, tandis que la modélisation statistique a permis de formaliser ces observations par des modèles mathématiques spécifiques.<br><br>
+                    
+                    L'analyse des données temporelles requiert des méthodes spécifiques qui tiennent compte de la dépendance entre les observations successives. Nous avons appris à utiliser les outils appropriés pour décomposer la série temporelle en ses différentes composantes (tendance, saisonnalité, résidus), ce qui est essentiel pour une analyse précise et des prévisions fiables.<br><br>
+                    
+                    Au cours de cette analyse, nous avons également appris à reconnaître les limites de nos modèles et les conditions nécessaires pour leur application correcte. Comprendre ces aspects est crucial pour éviter les erreurs d'interprétation et garantir la validité des résultats.<br><br>
+                    
+                    L'analyse des données de location de voitures nous a montré l'importance de prendre en compte le contexte économique et international pour interpréter les résultats correctement. Mobiliser ces ressources métiers de manière proactive nous a aidés à enrichir notre analyse et à fournir des insights plus pertinents et applicables.<br><br>
+                    
+                    Enfin, cette analyse nous a inculqué l'importance de la rigueur dans nos productions et dans la communication de nos résultats. Chaque étape de l'analyse, de la collecte des données à la modélisation et à la prévision, a nécessité une attention minutieuse aux détails et une documentation précise. Cette rigueur est fondamentale pour garantir la qualité et la fiabilité de nos analyses et pour communiquer nos résultats de manière professionnelle et transparente.
+
+                    <p><a href="SAE_prevision.pdf" class="rapport-link">Rapport</a></p>
+            </div>
+            <div class="niveau">
+                <h3>Niveau 3: Mettre en œuvre l'analyse exploratoire de données complexes</h3>
+                <p>Lors de la SAE Mise en oeuvre d’un processus de Datamining, nous avons appliqué des notions de datamining pour étudier la durée du sommeil, la qualité et les facteurs influençant les habitudes de sommeil, les niveaux d'activité physique, les niveaux de stress et les catégories de l'IMC, ainsi que les mesures de la pression artérielle et de la fréquence cardiaque. Nous avons également examiné l'occurrence de troubles du sommeil tels que l'insomnie et l'apnée du sommeil.<br><br>
+
+                    Nous avons utilisé un jeu de données "sleep_health" contenant des informations sur la santé liée au sommeil et le mode de vie de 400 individus. Le jeu de données se compose de 400 lignes et 13 colonnes, couvrant une large gamme de variables liées au sommeil et aux habitudes quotidiennes.<br><br>
+                    
+                    Nous avons commencé par appliquer une classification à nos données, puis nous avons effectué une Analyse Factorielle des Correspondances (AFC) et enfin nous avons appliqué une procédure d'apprentissage automatique.<br><br>
+                    
+                    Nous avons d'abord classé les individus en fonction de leur durée de sommeil, de leur qualité de sommeil, de leur niveau d'activité physique, de leur niveau de stress, de leur catégorie d'IMC, de leur pression artérielle, de leur fréquence cardiaque et de la présence ou l'absence de troubles du sommeil.<br><br>
+                    
+                    Ensuite, nous avons effectué une AFC pour étudier les relations entre les variables. Nous avons identifié des corrélations entre la durée du sommeil et la qualité du sommeil, ainsi qu'entre le taux de stress et la fréquence cardiaque. Nous avons également trouvé une corrélation entre le nombre de pas et l'activité physique.<br><br>
+                    
+                    De plus, nous avons appliqué une procédure d'apprentissage automatique pour prédire la qualité du sommeil en fonction des autres variables. Nous avons utilisé un arbre de décision pour représenter la répartition du jeu de données selon la qualité du sommeil.<br><br>
+                    
+                    Enfin la prise de conscience des limites des méthodes classiques a conduit à l'intégration de techniques plus avancées, comme les algorithmes de machine learning, pour analyser les données complexes de sommeil. Cette évolution a permis de traiter efficacement des ensembles de données volumineux et hétérogènes, révélant des tendances et des patterns qui auraient été inaccessibles avec des approches traditionnelles. Enfin, la maîtrise des concepts fondamentaux de l'intelligence artificielle nous a permis de développer des modèles prédictifs performants, validés par des tests rigoureux, renforçant ainsi la fiabilité des prédictions et des recommandations issues du projet.<br><br>
+                    
+                    En mettant en œuvre l'analyse exploratoire de données complexes, nous avons développé une compétence essentielle. Cela inclut la capacité à explorer, visualiser et interpréter des structures et des relations souvent cachées dans les données de sommeil. Cette compétence a permis de dépasser les simples analyses descriptives pour découvrir des informations cruciales qui  ont orienté nos décisions dans le cadre du projet.<br><br>
+                    <p><a href="sleep_health (1).html" class="rapport-link">Rapport</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/votreprofil"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <p class="copyright">
+            Sarah Moulin | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

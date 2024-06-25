@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traiter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Sarah <span>Moulin</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html#home" class="active">Home</a>
+            <a href="index.html#experiences">Expériences</a>
+            <a href="index.html#formation">Formation</a>
+            <a href="index.html#competences">Compétences</a>
+        </nav>
+    </header>
+
+    <section class="competences traiter">
+        <h2 class="sub-heading">Traiter des données à des fins décisionnelles</h2>
+        <div class="niveau-container">
+            <div class="niveau">
+                <h3>Niveau 1: Traiter des données structurées</h3>
+                <p>Dans le cadre de cette étude, nous avons exploré la thématique des entreprises, en nous concentrant sur leur démographie et leurs secteurs d'activité. L'objectif principal était d'analyser les données relatives à la création d'entreprises en France de 2017 à 2021, disponibles sur l'INSEE, afin de comprendre les évolutions et les spécificités de ces créations sur cette période. Une entreprise étant définie comme la plus petite unité organisationnelle de production de biens et services jouissant d'une certaine autonomie de décision, nous avons cherché à intégrer ces données dans une base de données relationnelle pour une analyse approfondie.<br><br>
+
+                    Nous avons commencé par la recherche et la collecte des fichiers pertinents sur l'INSEE, puis analysé la structure des données pour créer un schéma relationnel. Cela nous a permis de définir les tables nécessaires et d'établir les relations entre elles. L'étape suivante a consisté à initialiser la connexion à la base de données PostgreSQL et à créer le schéma sae6 ainsi que les différentes tables requises, incluant des tables de passage, des tables de référence pour les zones géographiques, et des tables principales pour les données des créations d'entreprises par année.<br><br>
+                    
+                    Pour assurer l'intégrité des données, nous avons défini des clés primaires et étrangères sur les tables, garantissant ainsi les relations appropriées entre elles. Ensuite, nous avons importé les données de divers fichiers CSV dans les tables correspondantes de la base de données.<br><br>
+                    
+                    Ce projet nous a permis de développer des compétences essentielles en gestion et manipulation de bases de données relationnelles, en particulier avec PostgreSQL. Nous avons acquis des connaissances pratiques en modélisation de données, en écriture de requêtes SQL complexes, et en manipulation de données massives. De plus, cette expérience nous a permis de mieux comprendre les dynamiques de la création d'entreprises en France, ce qui peut informer des stratégies économiques et des politiques publiques. Les enjeux étaient de garantir la qualité et la fiabilité des données pour des analyses futures, permettant ainsi une compréhension approfondie des tendances économiques.<br><br>
+                    
+                    
+                <p><a href="SAE2-06.html" class="rapport-link">Rapport</a></p>
+            </div>
+            <div class="niveau">
+                <h3>Niveau 2: Automatiser le traitement de données multidimensionnelles</h3>
+                <p> Lors de mon stage au rectorat d'Aix-Marseille, au sein de la Division du Budget de l’Aide à la Décision dans le bureau expertise et appui aux réformes, j'ai eu l'opportunité de travailler sur l'enquête "Devoirs Faits". Cette enquête a pour but de suivre la mise en œuvre du dispositif "Devoirs Faits" dans les collèges et lycées de l'académie. Le dispositif "Devoirs Faits" est un programme qui permet aux collégiens volontaires de bénéficier d'un temps d'étude accompagné en dehors des heures de classe pour réaliser leurs devoirs. Ce dispositif a pour objectif de favoriser la réussite scolaire des élèves en leur offrant un accompagnement personnalisé et en réduisant les inégalités scolaires. <br><br>
+
+                    Ma mission principale lors de ce stage a été de récupérer les résultats de l'enquête diffusée auparavant auprès des établissements scolaires de l'académie, et de les analyser. Pour ce faire, j'ai utilisé le portail ORQUESTRA, qui permet de diffuser des enquêtes et de récupérer les réponses des établissements scolaires. J'ai également utilisé le logiciel R pour importer et analyser les données récoltées.<br><br>
+                    
+                    Comprendre l'organisation des données de l'entreprise a été essentiel pour mener à bien ma mission. J'ai dû comprendre l'organisation des données de l'académie d'Aix-Marseille, notamment en ce qui concerne les établissements scolaires et les différents dispositifs mis en place. J'ai également dû comprendre comment les données étaient collectées et stockées dans le portail ORQUESTRA.<br><br>
+                    
+                    Réaliser le rôle central et spécifique de l'entreprise dans la chaîne décisionnelle a été une autre compétence clé que j'ai développée pendant mon stage. J'ai dû comprendre le rôle du rectorat d'Aix-Marseille dans la mise en place et le suivi du dispositif "Devoirs Faits", ainsi que son importance dans la chaîne décisionnelle pour améliorer l'accompagnement des élèves.<br><br>
+                    
+                    Identifier et résoudre les problèmes d’intégration de sources complémentaires et hétérogènes a été un défi majeur de ma mission. J'ai dû intégrer des données provenant de différentes sources (enquêtes, bases de données, etc.) et les combiner pour obtenir une vue d'ensemble de la mise en place du dispositif "Devoirs Faits" dans les établissements scolaires. J'ai également dû résoudre des problèmes d'intégration de données, tels que des doublons ou des données manquantes.<br><br>
+                    
+                    Comprendre la nécessité de tester, corriger et documenter un programme a été une autre compétence importante que j'ai acquise pendant mon stage. J'ai dû tester et corriger les scripts R utilisés pour analyser les données, ainsi que documenter mon travail pour faciliter la compréhension et la reproductibilité des résultats.<br><br>
+                    
+                    Grâce à cette mission, j'ai pu développer de nombreuses compétences en matière de traitement de données, notamment en ce qui concerne l'utilisation du logiciel R pour importer, nettoyer et organiser des données, ainsi qu'à utiliser des outils statistiques et graphiques pour analyser ces données. J'ai également développé mes compétences en matière de communication en travaillant en étroite collaboration avec les équipes éducatives des établissements scolaires et en rédigeant des comptes-rendus et des synthèses à destination des différents acteurs de l'académie.<br><br>
+                    
+                    Cette mission m'a permis de mieux comprendre les enjeux de l'éducation et de l'accompagnement des élèves, ainsi que les défis auxquels font face les équipes éducatives dans la mise en œuvre de dispositifs tels que "Devoirs Faits".<br><br>
+                    <p><a href="Rapport_de_Stage_RECTORAT_MOULIN.pdf" class="rapport-link">Rapport</a></p>
+                </div>
+            <div class="niveau">
+                <h3>Niveau 3: Intégrer le traitement de données complexes</h3>
+                <p>Dans la SAE Migration de données vers ou depuis un environnement NoSQL, nous avons effectué une série d'étapes techniques afin de collecter, traiter et intégrer des données textuelles dans une base de données PostgreSQL. Nous avons commencé par lire un fichier Excel contenant des données initiales, suivi de l'extraction de données JSON depuis une API externe en utilisant des requêtes HTTP. Les données récupérées ont été transformées et stockées dans un dataframe. Ensuite, nous avons connecté PostgreSQL et intégré les données JSON dans une table, en ajoutant des clés primaires après l'insertion. <br><br>Les objectifs principaux étaient de centraliser des données hétérogènes dans une base de données structurée et d'automatiser le processus de collecte et de stockage des données. Au cours de ce projet, nous avons développé des compétences clés en manipulation de données JSON, en utilisation de bibliothèques R pour les requêtes HTTP et l'intégration de données, ainsi qu'en gestion et manipulation de bases de données PostgreSQL.
+                    <p><a href="nosql.R" class="rapport-link">exemple code R</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/votreprofil"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <p class="copyright">
+            Sarah Moulin | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
